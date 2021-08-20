@@ -1,1 +1,1 @@
-web: streamlit run --server.enableCORS false --server.port $PORT rwandacovidtracker_forecaster.py
+web: streamlit run --server.enableCORS false --server.port $PORT rwandacovidtracker_forecasting.py
