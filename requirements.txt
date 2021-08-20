@@ -3,3 +3,4 @@ plotly==4.8.2
 plotly-express==0.4.1
 pandas==1.1.1
 numpy==1.19.0
+python-decouple==3.4
