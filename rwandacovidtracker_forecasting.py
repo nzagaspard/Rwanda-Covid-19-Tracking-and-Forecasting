@@ -52,12 +52,18 @@ summary.subheader('Summary')
 summary.table(summary_df)
 
 news.subheader('Recent News')
-articles = get_news()
 
-for article in articles:
+#Getting News
+try:
+    articles = get_news()
+    for article in articles:
     url = article['url']
     title = article['title']
     news.write("[{}]({})".format(title, url))
+    
+except:
+    news.write('The NewsApi not responding now, try refreshing!')
+    
 
 #Cases distribution figure
 st.subheader('Distribution')
