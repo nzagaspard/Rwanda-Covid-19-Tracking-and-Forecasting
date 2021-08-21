@@ -57,9 +57,9 @@ news.subheader('Recent News')
 try:
     articles = get_news()
     for article in articles:
-    url = article['url']
-    title = article['title']
-    news.write("[{}]({})".format(title, url))
+        url = article['url']
+        title = article['title']
+        news.write("[{}]({})".format(title, url))
     
 except:
     news.write('The NewsApi not responding now, try refreshing!')
