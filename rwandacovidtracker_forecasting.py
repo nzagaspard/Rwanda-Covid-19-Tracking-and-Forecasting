@@ -13,7 +13,6 @@ st.set_page_config(page_title="Rwanda Covid Tracker & Forecaster",page_icon=":fl
 data,race_data = load_data()
 summary_df, totals_transposed, totals = get_summary(data)
 last_date = totals[1]
-news = get_news()
 
 #Application
 hide_st_style = """
